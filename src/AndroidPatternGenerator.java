@@ -23,7 +23,7 @@ public class AndroidPatternGenerator {
 		ArrayList<String> patternList = new ArrayList<String>();
 		patternList.addAll(possiblePatterns);
 
-		final String sequentialFilePath = "sequential.txt";
+		final String sequentialFilePath = "output/sequential.txt";
 		System.out.print("\nWriting sequential output to [" + sequentialFilePath + "]...");
 		Collections.sort(patternList);
 		BufferedWriter sequentialWriter = new BufferedWriter(new FileWriter(sequentialFilePath));
@@ -32,7 +32,7 @@ public class AndroidPatternGenerator {
 		sequentialWriter.close();
 		System.out.println("Done");
 
-		final String shuffledFilePath = "shuffled.txt";
+		final String shuffledFilePath = "output/shuffled.txt";
 		System.out.print("\nWriting shuffled output to [" + shuffledFilePath + "]...");
 		Collections.shuffle(patternList);
 		BufferedWriter shuffledWriter = new BufferedWriter(new FileWriter(shuffledFilePath));
