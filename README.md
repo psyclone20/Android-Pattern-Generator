@@ -21,3 +21,5 @@ For reference, the numbers in the output are mapped to the points as:
 
 6     7     8
 ```
+
+### [See the visualizer page in action](https://psyclone20.github.io/Android-Pattern-Visualizer/)
