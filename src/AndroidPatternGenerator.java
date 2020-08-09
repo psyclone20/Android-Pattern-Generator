@@ -37,7 +37,7 @@ public class AndroidPatternGenerator {
 		Collections.shuffle(patternList);
 		BufferedWriter shuffledWriter = new BufferedWriter(new FileWriter(shuffledFilePath));
 		for (String pattern: patternList)
-			randomWriter.write(pattern + "\n");
+			shuffledWriter.write(pattern + "\n");
 		shuffledWriter.close();
 		System.out.println("Done");
 	}
